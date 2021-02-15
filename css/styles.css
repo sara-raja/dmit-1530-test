@@ -1,0 +1,207 @@
+
+html{
+	font-size: 62.5%;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.8rem;
+	line-height: 1.5;
+	background-color: #dadbdf;
+}
+h1{
+	font-size: 4.4rem;
+}
+h2{
+	font-size: 3.5rem;
+}
+h3{
+	font-size: 2.8rem;
+}
+h4{
+	font-size: 2.2rem;
+}
+/*
+Color reference:
+light grey = #dadbdf
+dark grey = #6f7374
+hover color = #5d5c61
+click here bg color = #5d5c61
+click here font color = #ffffff
+
+*/
+/*Header and footer / all pages*/
+
+header,
+footer{
+	padding: 1.6rem;
+	background-color: #fff;
+}
+.menu,
+.site-map,
+.site-map ul{
+	display: flex;
+}
+.menu li a{
+	border: 1px solid #dadbdf;
+	border-radius: 4px;
+	padding: 1rem;
+	margin-right: 1rem;
+}
+.site-map {
+	justify-content: space-between;
+}
+.site-map li{
+	margin-left: 1rem; 
+}
+main{
+	padding: 6.4rem 1.6rem;
+}
+
+/*Home page*/
+
+.home h2{
+	background: #6f7374 url(../img/white-linear-angled-architecture.jpg) no-repeat center top;
+	padding: 1.6rem;
+}
+.home div{
+	background: #fff;
+	padding: 1.6rem;
+}
+.home-text-box h3,
+.home-text-box p{
+	padding: 1.6rem;
+}
+.home-text-box{
+	border: 1px solid #6f7374;
+	margin: 1.6rem 0;
+}
+.home-text-box h3{
+	background-color: #6f7374;
+	color: #dadbdf;
+}
+.new-york {
+	margin: 1.6rem;
+}
+section.home-text-box p{
+	margin-bottom: 2.7rem;
+}
+
+/*buttons*/
+a{
+	text-decoration: none;
+}
+.button a{
+	background-color: #6f7374;
+	border-radius: 4px; 
+	color: #fff;
+	text-transform: uppercase;
+	padding: 1rem;
+}
+.button a:hover{
+	background-color: #fff;
+	color: #6f7374;
+}
+.menu a:hover{
+	background-color: #6f7374;
+	color: #fff;
+}
+
+/*Gallery*/
+.gallery img{
+	margin: 2% auto;
+}
+
+/*Blog*/
+.blog-text-box{
+	background-color: #fff;
+	padding: 2%;
+	margin-bottom: 2%;
+}
+/*at 800 px*/
+
+@media only screen and (min-width: 800px){
+	header div,
+	.blog-text-box,
+	.gallery div,
+	footer,
+	.new-york{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.home div{
+		display:flex;
+	}
+	.home-text-box{
+		margin: 1.6rem;
+		width: calc(100%/3);
+	}
+
+
+
+	.gallery img{
+		align-self: flex-start;
+	}
+	.row-2 img{
+		width: 49%;
+	}
+	.row-3 img{
+		width: 23.5%;
+	}
+	.row-4 img:nth-child(1),
+	.blog-text-box img,
+	.new-york div
+	{
+		width: 66%;
+	}
+	.row-4 img:nth-child(2),
+	.blog-text-box section,
+	.new-york img{
+		width: 32%;
+	}
+	.blog-text-box:nth-child(odd){
+		flex-flow: row-reverse;
+	}
+}
+
+
+@media only screen and (min-width: 1300px){
+	header div,
+	main,
+	footer div,
+	.home-text-box,
+	.new-york,
+	.home div
+	{
+		width: 960px;
+		margin: 0 auto;
+	}
+}
+
+
+
+/*
+.home-text-box{
+	background-color: #fff;
+	border:1px solid #6f7374;
+	margin-bottom: 3%;
+	padding: 3%;
+}
+section p{
+	margin-bottom: 2.7rem;
+}
+.home-text-box h3{
+	color: #fff;
+	background-color: #6f7374;
+	padding: 3%;
+}
+.home h2{
+	background: #6f7374 url(../img/white-linear-angled-architecture.jpg) no-repeat center top;
+	background-size: 100%;
+	width: 100vw;
+
+}
+.new-york{
+	background-color: #dadbdf;
+	padding: 1.6rem;
+}*/
